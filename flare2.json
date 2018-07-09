@@ -6,4 +6,3 @@
     {"name": "A1", "imports": ["B1"]},   
     {"name": "A2", "imports": ["B2"]} 
 ]
-

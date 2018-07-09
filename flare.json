@@ -101,7 +101,7 @@
 
 
     {"name": "วิภาวี ขำวิจิตร", "imports": ["Cellulose Acetate NanoFiber (CANF)"]},  
-    {"name": "อรรถโส ขำวิจิตร", "imports": ["Syngas from BioMass"]}
+    {"name": "อรรถโส ขำวิจิตร", "imports": ["Syngas from BioMass"]},
     {"name": "กำชัย นุ้ยธิติกุล", "imports": ["BiodieselTech"]},   
     
     {"name": "จรัญ บุญกาญจน์", "imports": ["Biofilter treatment of VOC"]}, 
@@ -121,28 +121,5 @@
     {"name": "เจนจิรา แก้วรัตน์", "imports": ["Air Quality Monitoring"]},   
     {"name": "สุธีระ ทองขาว", "imports": ["CommunityWater", "FloodMan", "ProvincialWaterPlan", "UAV & High Resolution Mapping"]},  
     
-    {"name": "รุ่งเรือง จันทา", "imports": []}
+    {"name": "รุ่งเรือง จันทา", "imports": ["Air Quality Monitoring"]}
 ]
-    
-      
-      
-      
-              
-    
-      
-      
-      
-     
-       
-          
-     
-      
-
-       
-      
-       
-    
-    
-
-]
-
