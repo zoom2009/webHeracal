@@ -74,7 +74,7 @@
   crossorigin="anonymous"></script>
 <script>
 
-var diameter = 450,
+var diameter = 500,
     radius = diameter / 2,
     innerRadius = radius - 120;
 
@@ -87,8 +87,8 @@ var line = d3.radialLine()
     .angle(function(d) { return d.x / 180 * Math.PI; });
 
 var svg = d3.select("body").append("svg")
-    .attr("width", 900)
-    .attr("height", 900)
+    .attr("width", 1000)
+    .attr("height", 1000)
   .append("g")
     .attr("transform", "translate(" + diameter + "," + diameter + ")");
 
