@@ -74,7 +74,7 @@
   crossorigin="anonymous"></script>
 <script>
 
-var diameter = 960,
+var diameter = 450,
     radius = diameter / 2,
     innerRadius = radius - 120;
 
@@ -87,10 +87,10 @@ var line = d3.radialLine()
     .angle(function(d) { return d.x / 180 * Math.PI; });
 
 var svg = d3.select("body").append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter)
+    .attr("width", 900)
+    .attr("height", 900)
   .append("g")
-    .attr("transform", "translate(" + radius + "," + radius + ")");
+    .attr("transform", "translate(" + diameter + "," + diameter + ")");
 
 var link = svg.append("g").selectAll(".link"),
     node = svg.append("g").selectAll(".node");
@@ -198,8 +198,8 @@ function packageImports(nodes) {
     var isShow = false;
     
     $("html").click(function(event) {
-        console.log('class : ', event.target.className);
-        console.log('id : ', event.target.id);
+        //console.log('class : ', event.target.className);
+       // console.log('id : ', event.target.id);
         if(event.target.id != "myPopup" && event.target.className.baseVal != "node" && isShow==true){
           $('#myPopup').hide();
           isShow = false; 
@@ -214,7 +214,19 @@ function packageImports(nodes) {
             }
         });
     });
+
+    $("html").center();
+
    }, 2000)
+
+   jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+    return this;
+}
 
         
 
